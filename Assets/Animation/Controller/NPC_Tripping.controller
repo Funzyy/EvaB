@@ -42,9 +42,9 @@ AnimatorStateTransition:
   m_Mute: 0
   m_IsExit: 0
   serializedVersion: 3
-  m_TransitionDuration: 3.31291
+  m_TransitionDuration: 1.7248402
   m_TransitionOffset: 0
-  m_ExitTime: 0.5028562
+  m_ExitTime: 0.4322114
   m_HasExitTime: 1
   m_HasFixedDuration: 1
   m_InterruptionSource: 0
@@ -118,7 +118,7 @@ AnimatorState:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: standing agian
+  m_Name: standing again
   m_Speed: 1
   m_CycleOffset: 0
   m_Transitions:
@@ -147,14 +147,14 @@ AnimatorController:
   m_Name: NPC_Tripping
   serializedVersion: 5
   m_AnimatorParameters:
-  - m_Name: stumble
-    m_Type: 4
+  - m_Name: startWalking
+    m_Type: 9
     m_DefaultFloat: 0
     m_DefaultInt: 0
     m_DefaultBool: 0
     m_Controller: {fileID: 9100000}
-  - m_Name: startWalking
-    m_Type: 4
+  - m_Name: stumble
+    m_Type: 9
     m_DefaultFloat: 0
     m_DefaultInt: 0
     m_DefaultBool: 0

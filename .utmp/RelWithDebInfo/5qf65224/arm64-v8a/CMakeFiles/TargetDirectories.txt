@@ -1,0 +1,5 @@
+C:/Users/simon/OneDrive/Dokumente/Repositorys/EvalB/EvaB/.utmp/RelWithDebInfo/5qf65224/arm64-v8a/CMakeFiles/edit_cache.dir
+C:/Users/simon/OneDrive/Dokumente/Repositorys/EvalB/EvaB/.utmp/RelWithDebInfo/5qf65224/arm64-v8a/CMakeFiles/rebuild_cache.dir
+C:/Users/simon/OneDrive/Dokumente/Repositorys/EvalB/EvaB/.utmp/RelWithDebInfo/5qf65224/arm64-v8a/GameActivity/CMakeFiles/game.dir
+C:/Users/simon/OneDrive/Dokumente/Repositorys/EvalB/EvaB/.utmp/RelWithDebInfo/5qf65224/arm64-v8a/GameActivity/CMakeFiles/edit_cache.dir
+C:/Users/simon/OneDrive/Dokumente/Repositorys/EvalB/EvaB/.utmp/RelWithDebInfo/5qf65224/arm64-v8a/GameActivity/CMakeFiles/rebuild_cache.dir

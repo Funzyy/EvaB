@@ -1,25 +1,22 @@
 using UnityEngine;
 using System.Collections;
 
-
 public class AnimationTripping : MonoBehaviour
 {
-    private Animator animator; // Animator des NPCs
-    public float walkingDelay = 5f; // Verzögerung, nach der der NPC anfänt zu gehen (in Sekunden)
+    private Animator animator; // Animator-Komponente des NPCs
+    public float walkingDelay = 5f; // Verzögerung, nach der der NPC anfängt zu gehen (in Sekunden)
     public float stumbleDelay = 5f; // Verzögerung, nach der der NPC stolpert (in Sekunden)
-
+    private bool hasTripped = false; // Kontrollvariable, ob der Ablauf bereits ausgeführt wurde
 
     private void Start()
     {
-        // Animator-Component holen
+        // Animator-Komponente des NPCs holen
         animator = GetComponent<Animator>();
 
         if (animator != null)
         {
-
-            // Starte Coroutine, um nach der Verzögerung den 'stumble'-Parameter zu setzen
-            StartCoroutine(startWalking());
-            StartCoroutine(stumble());
+            // Starte die Sequenz des Ablaufs
+            StartCoroutine(StartWalkingAndStumble());
         }
         else
         {
@@ -27,22 +24,26 @@ public class AnimationTripping : MonoBehaviour
         }
     }
 
-    private IEnumerator startWalking()
+    private IEnumerator StartWalkingAndStumble()
     {
-        // Warte die angegebene Zeit (z.B. 5 Sekunden)
+        // Warte die vorgegebene Zeit, bevor der NPC zu laufen beginnt
         yield return new WaitForSeconds(walkingDelay);
+        
+        // Lösen der 'startWalking'-Animation durch einen Trigger
+        animator.SetTrigger("startWalking");
 
-        // Setze den 'stumble'-Parameter auf true, um die Übergang zu 'tripping' auszulösen
-        animator.SetBool("startWalking", true);
-    }
-
-    private IEnumerator stumble()
-    {
-        // Warte die angegebene Zeit (z.B. 5 Sekunden)
+        // Warte die vorgegebene Zeit, bevor der NPC stolpert
         yield return new WaitForSeconds(stumbleDelay);
 
-        // Setze den 'stumble'-Parameter auf true, um die Übergang zu 'tripping' auszulösen
-        animator.SetBool("stumble", true);
-    }
+        // Überprüfe, ob der Charakter bereits gestolpert ist
+        if (!hasTripped)
+        {
+            // Lösen der 'stumble'-Animation durch einen Trigger
+            animator.SetTrigger("stumble");
 
+            // Markiere den Ablauf als abgeschlossen
+            hasTripped = true;
+
+        }
+    }
 }

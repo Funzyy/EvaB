@@ -27,7 +27,7 @@
                     "name": "Is Tracked",
                     "type": "Button",
                     "id": "6bb4e248-e42b-47c3-b66c-79566508ca74",
-                    "expectedControlType": "Button",
+                    "expectedControlType": "",
                     "processors": "",
                     "interactions": "",
                     "initialStateCheck": true
@@ -81,17 +81,6 @@
             "bindings": [
                 {
                     "name": "",
-                    "id": "cff1f981-6e1f-4e2c-a90c-715a0ea2e80e",
-                    "path": "<XRHMD>/centerEyePosition",
-                    "interactions": "",
-                    "processors": "",
-                    "groups": "",
-                    "action": "Position",
-                    "isComposite": false,
-                    "isPartOfComposite": false
-                },
-                {
-                    "name": "",
                     "id": "4d22c160-9642-4784-bed3-f108d9099185",
                     "path": "<HandheldARInputDevice>/devicePosition",
                     "interactions": "",
@@ -103,8 +92,19 @@
                 },
                 {
                     "name": "",
+                    "id": "cff1f981-6e1f-4e2c-a90c-715a0ea2e80e",
+                    "path": "<XRHMD>/centerEyePosition",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Position",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
                     "id": "e2017383-a3f6-4c46-acb1-012b8eece9cc",
-                    "path": "<XRHMD>/centerEyeRotation",
+                    "path": "<XRHMD>/deviceRotation",
                     "interactions": "",
                     "processors": "",
                     "groups": "",
