@@ -10098,6 +10098,10 @@ PrefabInstance:
       value: 2.452
       objectReference: {fileID: 0}
     - target: {fileID: 1717954561962503726, guid: f6336ac4ac8b4d34bc5072418cdc62a0, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.49
+      objectReference: {fileID: 0}
+    - target: {fileID: 1717954561962503726, guid: f6336ac4ac8b4d34bc5072418cdc62a0, type: 3}
       propertyPath: m_LocalPosition.z
       value: 10.674
       objectReference: {fileID: 0}
@@ -10309,10 +10313,10 @@ PrefabInstance:
       addedObject: {fileID: 942600502}
     - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 142ee0515847e0c41abeefa4f7ca17a4, type: 3}
       insertIndex: -1
-      addedObject: {fileID: 942600501}
+      addedObject: {fileID: 942600500}
     - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 142ee0515847e0c41abeefa4f7ca17a4, type: 3}
       insertIndex: -1
-      addedObject: {fileID: 942600500}
+      addedObject: {fileID: 942600503}
   m_SourcePrefab: {fileID: 100100000, guid: 142ee0515847e0c41abeefa4f7ca17a4, type: 3}
 --- !u!4 &942600497 stripped
 Transform:
@@ -10351,20 +10355,6 @@ Rigidbody:
   m_Interpolate: 1
   m_Constraints: 0
   m_CollisionDetection: 1
---- !u!114 &942600501
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 942600498}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d579e078071d12543b2bb4577192b7f4, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  walkingDelay: 1
-  stumbleDelay: 10
 --- !u!95 &942600502
 Animator:
   serializedVersion: 7
@@ -10375,7 +10365,7 @@ Animator:
   m_GameObject: {fileID: 942600498}
   m_Enabled: 1
   m_Avatar: {fileID: 9000000, guid: 142ee0515847e0c41abeefa4f7ca17a4, type: 3}
-  m_Controller: {fileID: 9100000, guid: b19966f867fbe7849b398c80a522763f, type: 2}
+  m_Controller: {fileID: 9100000, guid: 36445dfa184c0694d9194b71834f2f2f, type: 2}
   m_CullingMode: 1
   m_UpdateMode: 0
   m_ApplyRootMotion: 1
@@ -10387,6 +10377,20 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
+--- !u!114 &942600503
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 942600498}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1050c3143cef34b4cafa54170b2375bb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  walkingDelay: 5
+  standingDelay: 15
 --- !u!1001 &945471934
 PrefabInstance:
   m_ObjectHideFlags: 0
