@@ -10284,7 +10284,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1050c3143cef34b4cafa54170b2375bb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  walkingDelay: 5
+  walkingDelay: 60
   standingDelay: 15
 --- !u!1001 &945471934
 PrefabInstance:
