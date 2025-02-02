@@ -3,12 +3,12 @@
 
 ## Projekt
 
-Dieses VR-Projekt wurde für ein Experiment zur Untersuchung der Forschungsfrage: **"Beeinflusst der Immersionsgrad von virtuellen Umgebungen das Ausmaß an empathischer Verlegenheit gegenüber virtuellen Agenten?"**" erstellt. 
+Dieses VR-Projekt wurde für ein Experiment zur Untersuchung der Forschungsfrage: **"Beeinflusst der Immersionsgrad von virtuellen Umgebungen das Ausmaß an empathischer Verlegenheit gegenüber virtuellen Agenten?"** erstellt. 
 
-Es besteht aus 8 Szenen, welche sich aus einer Kombination folgender Faktoren zusammensetzen:
-    - 2 Immersionsgrade: immersiv / weniger immersiv
-    - 2 Peinlichkeitsgrade: peinlich / nicht peinlich
-    - 2 Aktivitäten: laufen / tanzen
+Es besteht aus 8 Szenen, welche sich aus einer Kombination folgender Faktoren zusammensetzen:  
+    - 2 Immersionsgrade: immersiv / weniger immersiv  
+    - 2 Peinlichkeitsgrade: peinlich / nicht peinlich  
+    - 2 Aktivitäten: laufen / tanzen  
 
 Konkret sehen die Szenen wie folgt aus:
 
